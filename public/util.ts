@@ -77,6 +77,48 @@ const operations: operation[] = [
     method: "DELETE",
     fields: { id: "input" },
   },
+  {
+    name: "Like Post",
+    endpoint: "/posts/:_id/like",
+    method: "POST",
+    fields: {},
+  },
+  {
+    name: "Unlike Post",
+    endpoint: "/posts/:_id/unlike",
+    method: "DELETE",
+    fields: {},
+  },
+  {
+    name: "Comment on Post",
+    endpoint: "/posts/:_id/comment",
+    method: "POST",
+    fields: { content: "input" },
+  },
+  {
+    name: "Update Comment",
+    endpoint: "/posts/comment/:_id",
+    method: "PATCH",
+    fields: { newContent: "input" },
+  },
+  {
+    name: "Delete Comment",
+    endpoint: "/posts/comment/:_id",
+    method: "DELETE",
+    fields: {},
+  },
+  {
+    name: "Create Circle",
+    endpoint: "/circles",
+    method: "POST",
+    fields: { name: "input", description: "input" },
+  },
+  {
+    name: "Delete Circle",
+    endpoint: "/circles/:_id",
+    method: "DELETE",
+    fields: {},
+  },
 ];
 
 // Do not edit below here.
